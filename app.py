@@ -121,7 +121,7 @@ def main():
     )
 
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-
+    
     st.title("3D Human Model Generator")
     st.info('This is a demo of the alpha version of the 3D Human Model Generator. It is pretty \nslow but it is a proof of concept. The final version will be much faster and will \nhave more features.', icon="🚨")
     st.text('\n')
@@ -131,10 +131,10 @@ def main():
     col1, col2 = st.columns(2)
     with col1:
         with st.form("valid_input_form"):
-            front = st.file_uploader("Upload the front image of your body", type=[
-                'png', 'jpg', 'jpeg'])
-            left = st.file_uploader("Upload the left side image of your body", type=[
-                                    'png', 'jpg', 'jpeg'])
+            front = st.file_uploader("Upload the front image of your body", 
+                        type=[ 'png', 'jpg', 'jpeg'])
+            left = st.file_uploader("Upload the left side image of your body", 
+                        type=[ 'png', 'jpg', 'jpeg'])
 
             model_input = []
             test1, test2 = False, False
@@ -142,7 +142,8 @@ def main():
             globals.shoulder_width = st.text_input(
                 "Real shoulder width (in cm)")
             verify = st.form_submit_button("Generate my 3D model (.obj)")
-            sex, bust, underbust, waist, hip, neckgirth, insideleg, shoulder, bodyheight = 0, 0, 0, 0, 0, 0, 0, 0, 0
+            sex, bust, underbust, waist, hip, neckgirth, insideleg, shoulder,
+            bodyheight = 0, 0, 0, 0, 0, 0, 0, 0, 0
             if verify:
                 if front is None or left is None:
                     st.write("Please upload both images")
@@ -161,9 +162,8 @@ def main():
                         print(model_input)
                         url = generate_url(model_input)
                         print(f'My URL : {url}')
-                        generate_model(url)
-
-                        print(f'My URL : {url}')
+                        #generate_model(url)
+                        #print(f'My URL : {url}')
                         generate_model(url)
 
                     else:
