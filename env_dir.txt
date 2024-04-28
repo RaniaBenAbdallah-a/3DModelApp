@@ -1,1 +1,1 @@
-C:\Users\SadokBarbouche\myenv\Scripts\activate
+C:\Users\rania\OneDrive\Desktop\3DHumanModelGenAndMeasureStreamlitApp-main\myenv\Scripts\activate
