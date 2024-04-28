@@ -256,7 +256,7 @@ def main():
     )
    
     st.sidebar.markdown(
-        "[👨‍💻 Source code:](https://github.com/SadokBarbouche/3DHumanModelGenAndMeasureStreamlitApp)"
+        "[👨‍💻 Source code: Created by Rania BEN ABDALLAH & Wafa Boulares](https://github.com/RaniaBenAbdallah-a/3DModelApp.git)"
     )
     st.sidebar.info(
         'We are working on making the input from the camera !', icon="⚠️")
