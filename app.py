@@ -254,7 +254,7 @@ def main():
     st.sidebar.title(
         "α Version of the 3D Human Model Generator/ Measurement Tool"
     )
-   
+
     st.sidebar.markdown(
         "[👨‍💻 Source code: Created by Rania BEN ABDALLAH & Wafa Boulares](https://github.com/RaniaBenAbdallah-a/3DModelApp.git)"
     )

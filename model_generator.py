@@ -3,7 +3,7 @@ import webbrowser #pour ouvrir les pages web
 import pyvista as pv
 import time
 def generate_url(sex=0, bust=90.4, underbust=80.6, waist=80.2, hip=98.3, neckgirth=33.4, insideleg=76.3, shoulder=36.6, bodyheight=188.0):
-    url = 'https://sadokbarbouche.github.io/3Dhumvis/?'
+    url = 'https://github.com/RaniaBenAbdallah-a/3DModelApp.git'
     url += 'sex=' + str(sex)
     url += '&Bust=' + str(bust)
     url += '&UnderBust=' + str(underbust)
